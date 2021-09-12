@@ -1,0 +1,532 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Smoke#Regression"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login with Valid Credentials",
+        "description": "",
+        "id": "login;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11120182600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the \"Login\" page on URL \"https://demo.actitime.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                },
+                {
+                  "val": "https://demo.actitime.com/",
+                  "offset": 36
+                }
+              ],
+              "location": "Login.user_is_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 160907400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User fill in \"Username\" with \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 14
+                },
+                {
+                  "val": "admin",
+                  "offset": 30
+                }
+              ],
+              "location": "Login.user_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126279700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User fill in \"Password\" with \"manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 14
+                },
+                {
+                  "val": "manager",
+                  "offset": 30
+                }
+              ],
+              "location": "Login.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 197634800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 19
+                }
+              ],
+              "location": "Login.user_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4751921200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should see \"Enter Time-Track\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Enter Time-Track",
+                  "offset": 17
+                }
+              ],
+              "location": "Login.user_should_see_message(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 74808400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should see the \"Logout\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logout",
+                  "offset": 21
+                }
+              ],
+              "location": "Login.user_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103678100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User close the browser",
+            "match": {
+              "location": "Login.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Multiple User Logins",
+        "description": "",
+        "id": "login;multiple-user-logins;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11460430200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the \"Login\" page on URL \"https://demo.actitime.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                },
+                {
+                  "val": "https://demo.actitime.com/",
+                  "offset": 36
+                }
+              ],
+              "location": "Login.user_is_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 299753900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User fill in login credentials with \"admin\" and \"manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 37
+                },
+                {
+                  "val": "manager",
+                  "offset": 49
+                }
+              ],
+              "location": "Login.user_fill_in_login_credentials_with_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 142286500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 19
+                }
+              ],
+              "location": "Login.user_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5197564400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see \"Enter Time-Track\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Enter Time-Track",
+                  "offset": 17
+                }
+              ],
+              "location": "Login.user_should_see_message(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78256100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should see the \"Logout\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logout",
+                  "offset": 21
+                }
+              ],
+              "location": "Login.user_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4251717000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User close the browser",
+            "match": {
+              "location": "Login.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Multiple User Logins",
+        "description": "",
+        "id": "login;multiple-user-logins;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10712430300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the \"Login\" page on URL \"https://demo.actitime.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                },
+                {
+                  "val": "https://demo.actitime.com/",
+                  "offset": 36
+                }
+              ],
+              "location": "Login.user_is_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 256650700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User fill in login credentials with \"admin\" and \"manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 37
+                },
+                {
+                  "val": "manager",
+                  "offset": 49
+                }
+              ],
+              "location": "Login.user_fill_in_login_credentials_with_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168477600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 19
+                }
+              ],
+              "location": "Login.user_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6789099800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see \"Enter Time-Track\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Enter Time-Track",
+                  "offset": 17
+                }
+              ],
+              "location": "Login.user_should_see_message(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 82011500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should see the \"Logout\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logout",
+                  "offset": 21
+                }
+              ],
+              "location": "Login.user_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116368200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User close the browser",
+            "match": {
+              "location": "Login.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Login with Invalid Credentials",
+        "description": "",
+        "id": "login;login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15348575300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User is on the \"Login\" page on URL \"https://demo.actitime.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 16
+                },
+                {
+                  "val": "https://demo.actitime.com/",
+                  "offset": 36
+                }
+              ],
+              "location": "Login.user_is_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111709100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User fill in \"Username\" with \"admin1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 14
+                },
+                {
+                  "val": "admin1",
+                  "offset": 30
+                }
+              ],
+              "location": "Login.user_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167253300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User fill in \"Password\" with \"manager2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 14
+                },
+                {
+                  "val": "manager2",
+                  "offset": 30
+                }
+              ],
+              "location": "Login.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164207400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User click on the \"Login\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 19
+                }
+              ],
+              "location": "Login.user_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1996440800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User should see error \"Username or Password is invalid.\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username or Password is invalid.",
+                  "offset": 23
+                }
+              ],
+              "location": "Login.user_should_see_error_message(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 442847600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User close the browser",
+            "match": {
+              "location": "Login.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "D:/BDD/src/test/resources/features/TimeLogin.feature"
+  }
+]
